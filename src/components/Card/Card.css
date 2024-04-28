@@ -1,0 +1,83 @@
+.card-image {
+  object-fit: cover;
+  object-position: center center;
+  max-height: 280px;
+  width: 235px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.card-section {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  display: grid;
+  row-gap: 5rem;
+}
+
+.meta {
+  background: white;
+  padding-top: 5px;
+}
+
+.meta .name a {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  font-weight: 800 !important;
+}
+
+@media screen and (max-width: 350px) {
+  .card-section {
+    grid-template-columns: 60vw;
+  }
+  .card-image {
+    width: 80%;
+  }
+  .pagination li a {
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-section {
+    justify-content: center;
+    grid-template-columns: 55vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-section {
+    justify-content: center;
+    grid-template-columns: 40vw;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .card-section {
+    grid-template-columns: 35vw 35vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-section {
+    grid-template-columns: repeat(3, 25vw);
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card-section {
+    grid-template-columns: repeat(4, 20vw);
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .card-section {
+    grid-template-columns: repeat(5, 15vw);
+  }
+}

@@ -1,0 +1,279 @@
+.details-container {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.poster-image {
+  max-height: 35rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.back-arrow {
+  font-size: 10px;
+  position: relative;
+  top: 3.5px;
+  padding-right: 5px;
+}
+
+.back-btn {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.title {
+  padding-top: 5rem;
+}
+
+.release-date {
+  padding-top: 2rem;
+}
+
+.run-time {
+  padding-top: 1rem;
+}
+
+.genres {
+  padding-top: 1rem;
+}
+
+.show-rating {
+  padding-top: 1rem;
+}
+
+.overview {
+  padding-top: 1rem;
+  color: #757575;
+}
+
+.known-as {
+  padding-top: 20px;
+  color: #757575;
+}
+
+.birth-container {
+  padding-top: 2rem;
+}
+
+.birth-container h3 {
+  display: inline-block;
+}
+
+.birth-place {
+  display: inline;
+  color: #757575;
+}
+
+.alternate-names {
+  padding-top: 2.5rem;
+}
+
+.biography-content,
+.overview-content {
+  padding-top: 2.5rem;
+}
+
+.biography {
+  padding-top: 1rem;
+  color: #757575;
+}
+
+.genre-btn {
+  outline: none;
+  border: none;
+  padding: 0.5em 0.8em;
+  margin: 5px 5px;
+  border-collapse: collapse;
+  background: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.play-icon {
+  position: relative;
+  top: 8px;
+}
+
+.trailer-btn {
+  outline: none;
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  margin: 30px 0px;
+  border-collapse: collapse;
+  background: white;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.trailer-btn:hover {
+  background: linear-gradient(to left, coral, purple);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.no-content-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.genre-text {
+  display: inline-block;
+}
+
+@media screen and (min-width: 2200px) {
+  .details-container {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media screen and (max-width: 2200px) {
+  .details-container {
+    grid-template-columns: 1fr 3.5fr;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .details-container {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .details-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .details-container {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .details-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .details-container {
+    grid-template-columns: 1fr;
+    margin: 1em;
+  }
+
+  .details-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 15em;
+    margin-top: 5em;
+  }
+
+  .birth-container h3 {
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alternate-names h3 {
+    text-align: center;
+  }
+
+  .biography-content h3,
+  .overview-content h3 {
+    text-align: center;
+  }
+
+  .known-as {
+    text-align: center;
+  }
+
+  .biography,
+  .overview {
+    text-align: center;
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+  .known-as {
+    font-size: 15px;
+  }
+
+  .birth-place {
+    font-size: 15px;
+  }
+
+  .poster-image {
+    max-height: 20rem;
+    align-self: center;
+  }
+
+  .genre-btn {
+    margin: 0.1em;
+  }
+
+  .genres h3 {
+    text-align: center;
+    font-size: 16px;
+    display: block !important;
+    margin-bottom: 5px;
+  }
+
+  .genre-text {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    padding-top: 2.5em;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .back-btn {
+    padding-top: 3em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .genre-text {
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+  }
+  .birth-container h3 {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .known-as,
+  .biography,
+  .overview {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .birth-place {
+    font-size: 15px;
+  }
+}

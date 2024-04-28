@@ -1,0 +1,41 @@
+.pagination li {
+  cursor: pointer;
+  list-style: none;
+}
+
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+.pagination li a {
+  color: black;
+  background-color: whitesmoke;
+  padding: 0.3rem 0.5rem;
+  border: 0.5px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+a.page-prev {
+  border-left: 1px solid grey !important;
+}
+
+a.page-next {
+  border-right: 1px solid grey !important;
+}
+
+li.active a {
+  background-color: dodgerblue !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 500px) {
+  .pagination li a {
+    padding: 0.2em;
+    font-size: 1em;
+  }
+}

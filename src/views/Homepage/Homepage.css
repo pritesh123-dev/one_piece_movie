@@ -1,0 +1,133 @@
+.banner {
+  width: 100%;
+}
+
+.banner-img {
+  object-fit: cover;
+  color: white;
+  min-height: 400px;
+  max-height: 500px;
+  font-family: "Fredoka", sans-serif;
+}
+
+input.mobile {
+  display: none;
+}
+
+.banner-content {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+}
+
+.banner-content input {
+  width: 100%;
+  margin-top: 40px;
+  outline: none;
+  padding: 14px;
+  font-size: 1.25rem;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+
+.banner-gradient {
+  height: 5rem;
+}
+
+.search-bx {
+  position: relative;
+  width: 90%;
+}
+
+.home-title {
+  padding-left: 50px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(to left, coral, purple);
+  cursor: pointer;
+  padding: 1.1rem 2rem;
+  position: absolute;
+  top: 40px;
+  font-size: 1rem;
+  left: 95%;
+}
+
+.search-bx input {
+  text-indent: 1rem;
+}
+
+.popular-container .movies {
+  margin-top: 5rem;
+}
+
+.popular-container .title-header {
+  position: relative;
+  bottom: 0;
+}
+
+.top .title-header {
+  position: relative;
+  bottom: 0;
+}
+
+.chevron-right {
+  position: absolute;
+  right: 0;
+  top: 21em;
+  background: rgba(0, 0, 0, 0.5);
+  width: 1.5em !important;
+  cursor: pointer;
+  height: 2.5em !important;
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 650px) {
+  .banner-content {
+    padding-left: 50px;
+  }
+
+  ::placeholder {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  input.mobile {
+    display: inline-block;
+  }
+
+  input.window {
+    display: none;
+  }
+
+  .search-bx .btn {
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .search-bx input {
+    text-indent: 0;
+  }
+}
+
+@media screen and (min-width: 2050px) {
+  .search-bx .btn {
+    left: 98%;
+  }
+}
